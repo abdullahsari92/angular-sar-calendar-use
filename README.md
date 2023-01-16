@@ -1,5 +1,5 @@
 # angular-calendar-library
-angular da kullanabileceğiniz Takvim kütüphanesi
+Angular da kullanabileceğiniz Takvim kütüphanesi
 
 <div align="center">
 
@@ -9,7 +9,7 @@ angular da kullanabileceğiniz Takvim kütüphanesi
 ## Installation
 
 ```
-npm i @sar-calendara
+npm i @sar-calendar
 ```
 
 ## Usage
