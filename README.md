@@ -1,8 +1,5 @@
 # angular-calendar-library
-angular da özgün tasarım yazdığım calendar kutuphanesi
-
-
-
+angular da kullanabileceğiniz Takvim kütüphanesi
 
 <div align="center">
 
