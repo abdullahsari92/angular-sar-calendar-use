@@ -1,7 +1,8 @@
-# angular-sar-calendar-use
-angular-sar-calendar-use
-
+# angular-calendar-library
 angular da özgün tasarım yazdığım calendar kutuphanesi
+
+
+
 
 <div align="center">
 
@@ -11,7 +12,7 @@ angular da özgün tasarım yazdığım calendar kutuphanesi
 ## Installation
 
 ```
-npm i @sar-calendar
+npm i @sar-calendara
 ```
 
 ## Usage
@@ -33,13 +34,38 @@ import { SarCalendarModule } from 'sar-calendar';
 export class AppModule {}
 ```
 
+
+After that you can use parameter definition in `AppComponent`  
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  dayDate:Date= new Date();
+  monthValues: any[] = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağus','Eylül', 'Ekim', 'Kasım','Aralık'];
+  dayValues: any = {Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday ',Sat:'Saturday',Sun:'Sunday'};
+
+  getDate(date:Date)
+  {
+  
+    this.dayDate = date;
+  
+  }
+}
+
+```
+
 After that you can use `sar-calendar` component in template
 
 ```html
 <div style="width: 700px; margin: 20px;">
 
   
-  <sar-calendar (startDate)="getDate($event)" [monthNames]="monthNames"> </sar-calendar>
+  <sar-calendar (startDate)="getDate($event)" [monthNames]="monthValues" [daysNames]="dayValues"> </sar-calendar>
 
   Tarih = {{this.dayDate}}
 

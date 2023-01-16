@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  dayDate:string="";
+  dayDate:Date = new Date();
   monthNames: any[] = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağus','Eylül', 'Ekim', 'Kasım','Aralık'];
 
-  getDate(date:any)
+  getDate(date:Date)
   {
   
     this.dayDate = date;
