@@ -12,7 +12,7 @@ angular da özgün tasarım yazdığım calendar kutuphanesi
 ## Installation
 
 ```
-npm i @sar-calendar
+npm i @sar-calendara
 ```
 
 ## Usage
@@ -63,8 +63,28 @@ After that you can use `sar-calendar` component in template
 
 ```html
 <div style="width: 700px; margin: 20px;">
+
+  
   <sar-calendar (startDate)="getDate($event)" [monthNames]="monthValues" [daysNames]="dayValues"> </sar-calendar>
+
   Tarih = {{this.dayDate}}
+
+
+</div>
+```
+
+
+Or
+
+```html
+<div style="width: 700px; margin: 20px;">
+
+  
+  <sar-calendar (startDate)="getDate($event)" [IsYearUse]="true" > </sar-calendar>
+
+  Tarih = {{this.dayDate}}
+
+
 </div>
 ```
 
