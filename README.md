@@ -88,4 +88,4 @@ Or
 </div>
 ```
 
-![sar-calendar](https://raw.githubusercontent.com/abdullahsari92/angular-calendar-library/main/sar-calendar-use/src/assets/tasarim/calendar.png)
+![sar-calendar](https://raw.githubusercontent.com/abdullahsari92/angular-sar-calendar-use/main/src/assets/designer/sarCalendar.png)
